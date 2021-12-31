@@ -1,0 +1,1 @@
+/api/scan  https://api.etherscan.io/api?module=stats&action=dailytx&startdate=2019-02-01&enddate=2019-02-28&sort=asc&apikey=YourApiKeyToken  200
