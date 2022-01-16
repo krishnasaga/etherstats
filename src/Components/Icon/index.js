@@ -1,5 +1,4 @@
-import { sizes } from '@theme-ui/preset-bootstrap';
-import React, { useLayoutEffect,useRef, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { Box } from 'theme-ui';
 
 export const Icon = ({name,size,color,sx,...rest}) => {
@@ -17,5 +16,8 @@ export const Icon = ({name,size,color,sx,...rest}) => {
    });
 
 
-    return <Box dangerouslySetInnerHTML={{__html: svg} } id='icon' sx={ { fill: color , width: size, height: size,...sx}} {...rest}/>;
+    return <Box 
+        dangerouslySetInnerHTML={{__html: svg} } 
+        id='icon' 
+        sx={ { fill: color , width: size, height: size,...sx}} {...rest}/>;
 };

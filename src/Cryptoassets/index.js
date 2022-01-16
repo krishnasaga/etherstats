@@ -1,7 +1,6 @@
 import React from 'react';
-import { Image,Grid,Box,Text,ThemeProvider,Container } from 'theme-ui';
+import { Image,Grid,Box,Text,Container } from 'theme-ui';
 import { useEtherStats, useInfo } from '../data/useEtherStats';
-import darkTheme from '../themes/dark';
 import { Icon } from '../Components/Icon';
 import Fade from 'react-reveal/Fade';
 import { useParams } from 'react-router';

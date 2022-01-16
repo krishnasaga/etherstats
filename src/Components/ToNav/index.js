@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 const Top = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { isAuthenticated } = useAuth0();
 
   return <Box sx={{ boxShadow: [0]}}>
     <Grid columns={['0.5fr 1fr 10fr 2fr']}>
@@ -29,7 +29,7 @@ const Top = () => {
 }
 
 const LoginButton = () => {
-  const { loginWithRedirect,isAuthenticated,isLoading } = useAuth0();
+  const { loginWithRedirect } = useAuth0();
 
   return <Box>
       <Button onClick={() => loginWithRedirect()}>Log In</Button> 
