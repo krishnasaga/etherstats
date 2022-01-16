@@ -1,18 +1,5 @@
 import { useEffect, useState } from "react";
 
-const getProp = (data,prop) => {
-    if(prop === 'ethsupply'){
-        return data.result;
-    }
-
-    if(prop === 'totalnodes'){
-        return data.result['TotalNodes'];
-    }
-
-    return 0;
-
-}
-
 export const useEtherStats = ({id,autoScale,statName}) => {
     const [stat,setStat] = useState({
         number: 0,
